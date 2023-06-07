@@ -1,0 +1,106 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2em;
+  background-image: url("imgs/iglesia.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.d-list ul li {
+  font-size: 24px;
+}
+.d-list ul li a {
+  transition: transform 0.3s ease;
+  font-size: 30px;
+}
+
+
+.d-list ul li a:hover {
+  transform: translateX(5px);
+  color: rgb(207, 180, 58);
+}
+.title {
+  /* center */
+  text-align: center;
+   font-size: 60px;
+   margin-bottom: 20px;
+  position: relative;
+
+}
+
+
+h1 {
+  font-family: "Palanquin";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff8e8;
+}
+.d-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	margin-left: -10%;
+}
+
+.d-list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+
+  background-color: #865d0f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+
+.d-list li a {
+	width: 100%;
+	text-align: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fff8e8;
+  text-decoration: none;
+	padding: 5px 15px;
+}
+
+.d-image{
+	/* fixed image to left */
+	position: relative;
+	left: -10%;
+}
+
+.d-image img{
+	position: absolute;
+	width: 500px;
+	height: auto;
+	z-index: -10;
+}
+
+
+@media only screen and (max-width: 480px) {
+
+	.title {
+		margin-left: 0;
+	}
+  .d-image img {
+    display: none;
+  }
+	.d-list li a {
+		font-size: 16px;
+
+	}
+}
+
+@media all and (width: 768px) and (height: 1024px) and (orientation:landscape){
+  .d-image img {
+    display: none;
+  }
+}
